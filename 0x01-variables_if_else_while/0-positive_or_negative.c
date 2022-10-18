@@ -2,10 +2,10 @@
 #include <time.h>
 
 /**
- * main- entry point og the program
+ * main- entry point for the program
  * takes no argument
  *
- * Description: determing if int is positve or negative usinf ifelse
+ * Description: determing if int is positve or negative using ifelse
  * Return: Program always return 0(success)
  */
 int main(void)
@@ -24,7 +24,6 @@ int main(void)
 	}
 	else
 	{
-
 		printf("%d is negative\n", n);
 	}
 	return (0);
