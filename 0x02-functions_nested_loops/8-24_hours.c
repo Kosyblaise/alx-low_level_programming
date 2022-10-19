@@ -1,28 +1,42 @@
 #include "main.h"
 
 /**
- * jack_bauer -prints every minute of the day
+ * jack_bauer -prints time count
  *
- * Return: Always 0.
  */
-
+void jack_bauer(void)
 {
-	int a;
-	int b;
+	int hr1, hr2, min1, min2;
+	int t = 9;
 
-	for (a = 0; a <= 23; a++)
+	hr2 = 0;
+	while (hr2 <= 2)
 	{
-		for (b = 0; b <= 59; b++)
+		if (hr2 == 2)
 		{
-			_putchar (a / 10 + '0');
-			_putchar (a % 10 + '0');
-			_putchar (':');
-			_putchar (b / 10 + '0');
-			_putchar (b % 10 + '0');
-			_putchar ('\n');
-
+			t = 3;
 		}
-
+		hr1 = 0;
+		while (hr1 <= t)
+		{
+			min2 = 0;
+			while (min2 <= 5)
+			{
+				min1 = 0;
+				while (min1 <= 9)
+				{
+					_putchar('0' + hr2);
+					_putchar('0' + hr1);
+					_putchar(':');
+					_putchar('0' + min2);
+					_putchar('0' + min1);
+					_putchar('\n');
+					min1++;
+				}
+				min2++;
+			}
+			hr1++;
+		}
+		hr2++;
 	}
-
 }
